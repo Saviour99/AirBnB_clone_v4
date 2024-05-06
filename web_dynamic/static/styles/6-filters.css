@@ -51,6 +51,18 @@ button:hover {
     width: 25%;
 }
 
+.amenities li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.amenities input[type="checkbox"] {
+    position: absolute;
+    left: 10px;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
 .popover {
     visibility: hidden;
     width: 100%;
