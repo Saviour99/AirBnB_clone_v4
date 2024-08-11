@@ -1,18 +1,18 @@
 #!/usr/bin/node
 
 $(function(){
-	let amenityIDs = [];
+	let amenityList = [];
 
 	$(".amenities input[type='checkbox']").change(function(){
 		let amenityID = $(this).val();
 		let amenityName = $(this).siblings('label').text();
 
 		if ($(this).is(':checked')) {
-			amenityIDs[amenityID] = amenityName;
+			amenityList[amenityID] = amenityName;
 		} else {
-			delete amenityIDs[amenityID];
+			delete amenityList[amenityID];
 		}
 		
-		$('.amenities h4').text(Object.values(amenityIDs).join(", "));
+		$('.amenities h4').text(Object.values(amenityList).join(", "));
 	});
 });
