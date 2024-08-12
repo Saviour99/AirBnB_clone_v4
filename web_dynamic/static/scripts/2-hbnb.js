@@ -20,8 +20,8 @@ $(function(){
 			$("div#api_status").addClass("available");
 		} else {
 			$("div#api_status").removeClass("available");
-		}.fail(function(){
-			$('div#api_status').removeClass('available');
+		}
+	}).fail(function(){
+		$('div#api_status').removeClass('available');
 		});
-	}
 });
