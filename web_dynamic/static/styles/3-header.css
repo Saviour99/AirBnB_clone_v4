@@ -15,7 +15,7 @@ header #api_status {
     border-radius: 50%;
     background-color: #cccccc;
     position: absolute;
-    top: 50%;
+    top: 35px;
     right: 30px;
     transform: translateY(-50%);
 }
